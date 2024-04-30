@@ -1,0 +1,145 @@
+/* Start Slider */ 
+.slider {
+    q {
+        display: block;
+        text-align: center;
+        line-height: 1.7;
+        width: 70%;
+        margin: 30px auto;
+        color: #5e5e5e;
+        font: {
+            size: 20px;
+            weight: bold;
+            style: italic;
+        }
+    }
+    img {
+        max-width: 100%;
+    }
+    .slider-bullets {
+        text-align: center;
+        margin-top: 10px;
+        li {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: 2px solid $greyColor;
+            background-color: $greyColor;
+            cursor: pointer;
+            transition: .3s;
+            &.active,
+            &:hover {
+                background-color: #fff;
+                border: 2px solid #000;
+            }
+        }
+    }
+}
+/* End Slider */
+/* Start Services */ 
+.services {
+    .service-box {
+        @media #{$minMedium} {
+            float: $floatLeft;
+            width: (100% / 3);
+            &:not(:last-of-type) {
+                padding-right: 20px;
+            }
+        }
+        @media #{$maxMobile} {
+            .service-icon {
+                display: block;
+                margin-bottom: 15px;
+            }
+        }
+        .service-title {
+            color: #666;
+            font-size: 20px;
+            .service-icon {
+                font-size: 35px;
+                position: relative;
+                top: 4px;
+            }
+        }
+        .service-desc {
+            color: #777;
+            line-height: 1.5;
+        }
+        .service-link {
+            color: $redColor;
+            text-decoration: none;
+        }   
+    }
+}
+/* End Services */ 
+/* Start Our Team */ 
+.our-team {
+    .team-box {
+        @media #{$minSmall} {
+            float: $floatLeft;
+            width: (100% / 2);
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 0 10px;
+        }
+        @media #{$minMedium} {
+            width: (100% / 3);
+            text-align: $textLeft;
+            padding: 0 20px;
+        }
+        @media #{$minLarge} {
+            width: (100% / 4);
+        }
+        @media #{$maxMobile} {
+            margin-bottom: 40px;
+        }
+        .team-img {
+            width: 100%;
+            height: 250px;
+        }
+        .team-title {
+            margin: 10px 0;
+            color: #666;
+            font: {
+                size: 20px;
+                weight: normal;
+            } 
+            span {
+                font: {
+                    size: 22px;
+                    weight: bold;
+                } 
+                color: $redColor;
+            }
+        }
+        .team-desc {
+            color: #777;
+            line-height: 1.5;
+        }
+        .team-link {
+            color: $redColor;
+            text-decoration: none;
+        }   
+    }
+}
+/* End Our Team */
+/* Start Gallery */
+.gallery {
+    .gallery-box {
+        @media #{$minSmall} {
+            float: $floatLeft;
+            width: (96% / 3);
+            &:not(:last-of-type) {
+                margin: 0 1%;
+            }
+        }
+        @media #{$maxSmall} {
+            margin-bottom: 40px;
+        }
+    }
+    .gallery-img {
+        max-width: 100%;
+    }
+}
+/* End Gallery */
